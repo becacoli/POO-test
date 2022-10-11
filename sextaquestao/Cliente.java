@@ -2,14 +2,17 @@ package sextaquestao;
 
 import java.util.ArrayList;
 
+// add array
+
 public class Cliente {
   private String nome;
   private ArrayList<ContaCorrente> contas;
-  
-  public Cliente(String nome, ArrayList<ContaCorrente> contas){
+
+  public Cliente(String nome, ArrayList<ContaCorrente> contas) {
     this.nome = nome;
     this.contas = contas;
   }
+
   public ArrayList<ContaCorrente> getContas() {
     return contas;
   }
@@ -18,11 +21,10 @@ public class Cliente {
     this.contas = contas;
   }
 
-  
   public String getNome() {
     return nome;
   }
-  
+
   public void setNome(String nome) {
     this.nome = nome;
   }
