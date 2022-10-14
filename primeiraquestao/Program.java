@@ -4,15 +4,15 @@ import java.util.ArrayList;
 
 public class Program {
   public static void main(String[] args) {
-    Compra compra = new Compra();
+    Purchase purchase = new Purchase();
 
-    ArrayList<Item> saboresPizza = new ArrayList<>();
+    ArrayList<Item> flavorsPizza = new ArrayList<>();
     
-    saboresPizza.add(new Item("Carne seca", 24));
-    saboresPizza.add(new Item("4 queijos", 20));
-    compra.AddProduct(new Produto("Pizza", saboresPizza));
+    flavorsPizza.add(new Item("Carne seca", 24));
+    flavorsPizza.add(new Item("4 queijos", 20));
+    purchase.AddProduct(new Product("Pizza", flavorsPizza));
 
-    compra.AllProducts();
-    System.out.println("Valor total: " + compra.total());
+    purchase.AllProducts();
+    System.out.println("Total Value: " + purchase.total());
   }
 }

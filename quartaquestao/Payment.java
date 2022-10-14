@@ -12,6 +12,6 @@ public class Payment {
   }
 
   public void pagar(){
-    paymentMethod.pagar();
+    paymentMethod.pay();
   }
 }

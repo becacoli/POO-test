@@ -3,16 +3,16 @@ package quintaquestao;
 public class Main {
   public static void main(String[] args) {
 
-    UFALBluetooth bluetooth = new BluetoothEmPacotes();
-    bluetooth.estabelecerConnection();
-    bluetooth.processarDados();
-    bluetooth.fecharConnection();
+    UFALBluetooth bluetooth = new PackageBluetoothFormat();
+    bluetooth.openConnection();
+    bluetooth.processData();
+    bluetooth.closeConnection();
 
     System.out.println("--------------------------------");
 
-    UFALBluetooth bluetooth2 = new BluetoothSerial();
-    bluetooth2.estabelecerConnection();
-    bluetooth2.processarDados();
-    bluetooth2.fecharConnection();
+    UFALBluetooth bluetooth2 = new SerialBluetoothFormat();
+    bluetooth2.openConnection();
+    bluetooth2.processData();
+    bluetooth2.closeConnection();
   }
 }

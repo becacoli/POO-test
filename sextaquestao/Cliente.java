@@ -12,6 +12,10 @@ public class Cliente {
     this.nome = nome;
     this.contas = contas;
   }
+  public Cliente() {
+    this.nome = "";
+    this.contas = new ArrayList<>();
+  }
 
   public ArrayList<ContaCorrente> getContas() {
     return contas;

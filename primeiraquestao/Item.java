@@ -20,7 +20,7 @@ public class Item {
 
   @Override
   public String toString() {
-    return String.format("Nome do item: %s\n\t - Valor do item: %.2f", name, value);
+    return String.format("Item name: %s\n\t - Item Value: %.2f", name, value);
   }
 
 }

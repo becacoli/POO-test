@@ -6,7 +6,7 @@ public class Programa {
     Payment pagamento = new Payment(pix);
     pagamento.pagar();
 
-    Boleto boleto = new Boleto();
+    BillPayment boleto = new BillPayment();
     pagamento.setPaymentMethod(boleto);
     pagamento.pagar();
   }

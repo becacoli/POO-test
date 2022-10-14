@@ -2,12 +2,12 @@ package primeiraquestao;
 
 import java.util.ArrayList;
 
-public class Produto {
+public class Product {
 
   private String name;
   private ArrayList<Item> itens;
 
-  public Produto(String name, ArrayList<Item> itens) {
+  public Product(String name, ArrayList<Item> itens) {
     this.name = name;
     this.itens = itens;
   }

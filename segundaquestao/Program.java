@@ -2,15 +2,15 @@ package segundaquestao;
 
 public class Program {
   public static void main(String[] args) {
-    Estacionamento estacionamento = new Estacionamento();
-    estacionamento.estacionarCarro(new Carro("Uno", 5, 2));
-    estacionamento.estacionarCarro(new Carro("Civic", 5, 1));
+    Parking estacionamento = new Parking();
+    estacionamento.AddCar(new Car("Uno", 5, 2));
+    estacionamento.AddCar(new Car("Civic", 5, 1));
 
-    estacionamento.listarCarros();
+    estacionamento.AllCars();
 
-    System.out.printf("\n O estacionamento possui %d pessoas", estacionamento.getTotalDePessoasNoEstacionamento());
+    System.out.printf("\n There %d people in the parking", estacionamento.getTotalPersonQuantity());
 
-    estacionamento.estacionarCarro(new Carro("Gol", 4, 5));
+    estacionamento.AddCar(new Car("Gol", 4, 5));
 
   }
 }
